@@ -1,0 +1,95 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background: url('bg.jpg') no-repeat center center fixed;
+            -webkit-background-size: cover;
+            -moz-background-size: cover;
+            -o-background-size: cover;
+            background-size: cover;
+            font-family: 'Roboto', sans-serif;
+        }
+
+        .overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: radial-gradient(circle at center, transparent, black);
+        }
+
+        .card {
+            position: relative;
+            width: 300px;
+            height: 400px;
+            background: rgba(255, 255, 255, 0.8);
+            border-radius: 15px;
+            padding: 20px;
+            box-sizing: border-box;
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
+            text-align: center;
+            z-index: 1;
+            transition: transform 0.5s;
+        }
+
+        .card:hover {
+            transform: scale(1.05);
+        }
+
+        .card img {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+        }
+
+        .card h2,
+        .card p {
+            margin: 0 0 15px 0;
+        }
+
+        .card a {
+            color: #333;
+            text-decoration: none;
+            transition: color 0.5s;
+        }
+
+        .card a:hover {
+            color: #f00;
+        }
+
+        @media (max-width: 600px) {
+            .card {
+                width: 80%;
+                height: auto;
+            }
+
+            .card img {
+                max-width: 50px;
+                height: 50px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="overlay"></div>
+    <div class="card">
+        <img src="head.jpg" alt="头像">
+        <h2>名称</h2>
+        <p>简介</p>
+        <h3><a href="tencent://AddContact/?fromId=45&fromSubId=1&subcmd=all&uin=548503965">QQ：548503965</a></h3>
+        <h3><a href="http://qm.qq.com/cgi-bin/qm/qr?_wv=1027&k=hqiPjxdmS2XCFeb3IAsuC_2mSv3xHqRX&authKey=BdaSyWv4aZbUyr%2BgPtCInfcSU8bdMW4SwF%2BF%2BCrLVlj9ZSXCrxMW25b%2F4uSu3EIm&noverify=0&group_code=432033108">Q群：432033108</a></h3>
+    </div>
+</body>
+
+</html>
